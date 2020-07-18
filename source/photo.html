@@ -18,10 +18,10 @@
                         <span class="visually-hidden">Закрыть меню</span>
                     </button>
                     <ul class="main-nav__list site-list">
-                        <li class="site-list__item item-information"><a class="item-information__link" href="#">Информация</a></li>
-                        <li class="site-list__item item-photo"><a class="item-photo__link" href="#">Фото и видео</a></li>
-                        <li class="site-list__item item-map"><a class="item-map__link" href="#">форма отзыва</a></li>
-                        <li class="site-list__item item-hotel"><a class="item-map__link" href="#">HTML ACADEMY</a></li>
+                        <li class="site-list__item"><a class="site-list__link" href="#">Информация</a></li>
+                        <li class="site-list__item"><a class="site-list__link" href="#">Фото и видео</a></li>
+                        <li class="site-list__item"><a class="site-list__link" href="form.html">форма отзыва</a></li>
+                        <li class="site-list__item"><a class="site-list__link" href="#">HTML ACADEMY</a></li>
                     </ul>
                 </div>
             </nav>
@@ -31,16 +31,16 @@
         </header>
         <main class="page-main">
             <section class="heading">
+                <h1 class="visually-hidden">Sedona</h1>
                 <div class="heading__cover">
-                    <h1>Sedona</h1>
+                    <img src="https://via.placeholder.com/150x150" alt="Sedona">
                 </div>
-                <h3 class="heading__tittle">фото и видео</h3>
+                <h2 class="heading__tittle">фото и видео</h2>
                 <p class="heading__paragraph">
                     Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.
                 </p>
             </section>
             <section class="photo-video">
-                <h1 class="visually-hidden">Фотографии и видео</h1>
                 <ul class="main-list">
                     <li class="main-list__item item-photo">
                         <img class="item-photo__img" src="https://via.placeholder.com/150x150" alt="">
@@ -52,30 +52,30 @@
                         </div>
                     </li>
                     <li class="main-list__item item-photo">
-                        <img class="item-photo__img" src="https://via.placeholder.com/150x150" alt="">
                         <h3 class="item-photo__heading">Местная растительность</h3>
+                        <img class="item-photo__img" src="https://via.placeholder.com/150x150" alt="">
                         <p class="item-photo__paragraph">Автор фото: Сергей</p>
                         <div class="item-photo__like like">
-                            <a class="like__link" href="#">Кнопка лайка</a>
-                            <p class="like__number">143</p>
+                            <button class="like__link" type="button" aria-label="Кнопка лайка"></button>
+                            <span class="like__number">143</span>
                         </div>
                     </li>
                     <li class="main-list__item item-photo">
-                        <img class="item-photo__img" src="https://via.placeholder.com/150x150" alt="">
                         <h3 class="item-photo__heading">Дорога на север</h3>
+                        <img class="item-photo__img" src="https://via.placeholder.com/150x150" alt="">
                         <p class="item-photo__paragraph">Автор фото: Петр</p>
                         <div class="item-photo__like like">
-                            <a class="like__link" href="#">Кнопка лайка</a>
-                            <p class="like__number">96</p>
+                            <button class="like__link" type="button" aria-label="Кнопка лайка"></button>
+                            <span class="like__number">96</span>
                         </div>
                     </li>
                     <li class="main-list__item item-photo">
-                        <img class="item-photo__img" src="https://via.placeholder.com/150x150" alt="">
                         <h3 class="item-photo__heading">Мост дьявола</h3>
+                        <img class="item-photo__img" src="https://via.placeholder.com/150x150" alt="">
                         <p class="item-photo__paragraph">Автор фото: Антон</p>
                         <div class="item-photo__like like">
-                            <a class="like__link" href="#">Кнопка лайка</a>
-                            <p class="like__number">254</p>
+                            <button class="like__link" type="button" aria-label="Кнопка лайка"></button>
+                            <span class="like__number">254</span>
                         </div>
                     </li>
                     <li class="main-list__item item-video"></li>
@@ -84,26 +84,26 @@
         </main>
         <footer class="page-footer">
             <div class="page-footer__contacts contacts">
-                <p class="contacts__paragraph">#visitsedona</p>
+                <p class="contacts__hashtag">#visitsedona</p>
             </div>
             <ul class="page-footer__social social">
-                <li class="social-item twitter">
-                    <a class="twitter__link" href="#" aria-label="Ссылка Twitter"></a>
+                <li class="social-item">
+                    <a class="social-link twitter-link" href="#" aria-label="Седона в Twitter"></a>
                 </li>
-                <li class="social-item facebook">
-                    <a class="facebook__link" href="#" aria-label="Ссылка Facebook"></a>
+                <li class="social-item">
+                    <a class="social-link facebook-link" href="#" aria-label="Седона в Facebook"></a>
                 </li>
-                <li class="social-item youtube">
-                    <a class="youtube__link" href="#" aria-label="Ссылка YouTube"></a>
+                <li class="social-item">
+                    <a class="social-link youtube-link" href="#" aria-label="Седона в YouTube"></a>
                 </li>
             </ul>
             <p class="page-footer__copyright copyright">
-                <span class="copyright__span">разработано</span>
-                <img src="https://via.placeholder.com/150x150" alt="Логотип HTMLacademy">
+                <a href="https://htmlacademy.ru/intensive/adaptive" aria-label="Ссылка на HTMLAcademy">
+                    Разработано
+                </a>
             </p>
         </footer>
     </div>
-    <script src="js/form_minimized.js"></script>
 </body>
 
 </html>
