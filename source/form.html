@@ -20,8 +20,8 @@
                     <ul class="main-nav__list site-list">
                         <li class="site-list__item"><a class="site-list__link" href="#">Информация</a></li>
                         <li class="site-list__item"><a class="site-list__link" href="photo.html">Фото и видео</a></li>
-                        <li class="site-list__item"><a class="site-list__link" href="#">форма отзыва</a></li>
-                        <li class="site-list__item"><a class="site-list__link" href="#">HTML ACADEMY</a></li>
+                        <li class="site-list__item"><a class="site-list__link" href="form.html">форма отзыва</a></li>
+                        <li class="site-list__item"><a class="site-list__link" href="https://htmlacademy.ru">HTML ACADEMY</a></li>
                     </ul>
                 </div>
             </nav>
@@ -31,16 +31,16 @@
         </header>
         <main class="page-main">
             <section class="heading">
-                <h1 class="visually-hidden">Sedona</h1>
                 <div class="heading__cover">
                     <img src="https://via.placeholder.com/150x150" alt="Sedona">
                 </div>
-                <h2 class="heading__tittle">Оставьте свой отзыв</h2>
-                <p class="heading__paragraph">
+                <h1 class="heading__title">Оставьте свой отзыв</h1>
+                <p class="heading__text">
                     Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях
                 </p>
             </section>
             <section class="forms">
+                <h2 class="visually-hidden">Форма отзыва</h2>
                 <form class="form-review" action="https://echo.htmlacademy.ru" method="get">
                     <fieldset class="form-review__item person">
                         <legend class="form-review__title">Представьтесь:</legend>
@@ -112,7 +112,7 @@
                     </fieldset>
                     <fieldset class="form-review__item review-block">
                         <legend class="form-review__title">Опишите свои эмоции:</legend>
-                        <textarea class="review-block__text" class cols="30" rows="10"></textarea>
+                        <textarea class="review-block__text" cols="30" rows="10"></textarea>
                     </fieldset>
                     <button class="form-review__submit page-button" type="submit">Отправить отзыв</button>
                 </form>
@@ -133,19 +133,20 @@
                 <p class="contacts__hashtag">#visitsedona</p>
             </div>
             <ul class="page-footer__social social">
-                <li class="social-item">
-                    <a class="social-link twitter-link" href="#" aria-label="Седона в Twitter"></a>
+                <li class="social__item">
+                    <a class="social__link twitter-link" href="#" aria-label="Седона в Twitter"></a>
                 </li>
-                <li class="social-item">
-                    <a class="social-link facebook-link" href="#" aria-label="Седона в Facebook"></a>
+                <li class="social__item">
+                    <a class="social__link facebook-link" href="#" aria-label="Седона в Facebook"></a>
                 </li>
-                <li class="social-item">
-                    <a class="social-link youtube-link" href="#" aria-label="Седона в YouTube"></a>
+                <li class="social__item">
+                    <a class="social__link youtube-link" href="#" aria-label="Седона в YouTube"></a>
                 </li>
             </ul>
             <p class="page-footer__copyright copyright">
-                <a href="https://htmlacademy.ru/intensive/adaptive" aria-label="Ссылка на HTMLAcademy">
-                    Разработано
+                <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Ссылка на HTMLAcademy">
+                    <span class="copyright__text">Разработано</span>
+                    <img class="copyright__img" src="https://via.placeholder.com/150x150" alt="Логотип HTMLAcademy">
                 </a>
             </p>
         </footer>

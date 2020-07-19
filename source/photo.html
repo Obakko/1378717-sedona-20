@@ -19,9 +19,9 @@
                     </button>
                     <ul class="main-nav__list site-list">
                         <li class="site-list__item"><a class="site-list__link" href="#">Информация</a></li>
-                        <li class="site-list__item"><a class="site-list__link" href="#">Фото и видео</a></li>
+                        <li class="site-list__item"><a class="site-list__link" href="photo.html">Фото и видео</a></li>
                         <li class="site-list__item"><a class="site-list__link" href="form.html">форма отзыва</a></li>
-                        <li class="site-list__item"><a class="site-list__link" href="#">HTML ACADEMY</a></li>
+                        <li class="site-list__item"><a class="site-list__link" href="https://htmlacademy.ru">HTML ACADEMY</a></li>
                     </ul>
                 </div>
             </nav>
@@ -31,21 +31,21 @@
         </header>
         <main class="page-main">
             <section class="heading">
-                <h1 class="visually-hidden">Sedona</h1>
                 <div class="heading__cover">
                     <img src="https://via.placeholder.com/150x150" alt="Sedona">
                 </div>
-                <h2 class="heading__tittle">фото и видео</h2>
-                <p class="heading__paragraph">
+                <h1 class="heading__title">фото и видео</h1>
+                <p class="heading__text">
                     Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.
                 </p>
             </section>
             <section class="photo-video">
+                <h2 class="visually-hidden">Галерея</h2>
                 <ul class="main-list">
                     <li class="main-list__item item-photo">
-                        <img class="item-photo__img" src="https://via.placeholder.com/150x150" alt="">
                         <h3 class="item-photo__heading">неродные просторы</h3>
-                        <p class="item-photo__paragraph">Автор фото: Борис</p>
+                        <img class="item-photo__img" src="https://via.placeholder.com/150x150" alt="">
+                        <p class="item-photo__text">Автор фото: Борис</p>
                         <div class="item-photo__like like">
                             <a class="like__link" href="#">Кнопка лайка</a>
                             <p class="like__number">1350</p>
@@ -54,7 +54,7 @@
                     <li class="main-list__item item-photo">
                         <h3 class="item-photo__heading">Местная растительность</h3>
                         <img class="item-photo__img" src="https://via.placeholder.com/150x150" alt="">
-                        <p class="item-photo__paragraph">Автор фото: Сергей</p>
+                        <p class="item-photo__text">Автор фото: Сергей</p>
                         <div class="item-photo__like like">
                             <button class="like__link" type="button" aria-label="Кнопка лайка"></button>
                             <span class="like__number">143</span>
@@ -63,7 +63,7 @@
                     <li class="main-list__item item-photo">
                         <h3 class="item-photo__heading">Дорога на север</h3>
                         <img class="item-photo__img" src="https://via.placeholder.com/150x150" alt="">
-                        <p class="item-photo__paragraph">Автор фото: Петр</p>
+                        <p class="item-photo__text">Автор фото: Петр</p>
                         <div class="item-photo__like like">
                             <button class="like__link" type="button" aria-label="Кнопка лайка"></button>
                             <span class="like__number">96</span>
@@ -72,13 +72,15 @@
                     <li class="main-list__item item-photo">
                         <h3 class="item-photo__heading">Мост дьявола</h3>
                         <img class="item-photo__img" src="https://via.placeholder.com/150x150" alt="">
-                        <p class="item-photo__paragraph">Автор фото: Антон</p>
+                        <p class="item-photo__text">Автор фото: Антон</p>
                         <div class="item-photo__like like">
                             <button class="like__link" type="button" aria-label="Кнопка лайка"></button>
                             <span class="like__number">254</span>
                         </div>
                     </li>
-                    <li class="main-list__item item-video"></li>
+                    <li class="main-list__item item-video">
+
+                    </li>
                 </ul>
             </section>
         </main>
@@ -87,19 +89,20 @@
                 <p class="contacts__hashtag">#visitsedona</p>
             </div>
             <ul class="page-footer__social social">
-                <li class="social-item">
-                    <a class="social-link twitter-link" href="#" aria-label="Седона в Twitter"></a>
+                <li class="social__item">
+                    <a class="social__link twitter-link" href="#" aria-label="Седона в Twitter"></a>
                 </li>
-                <li class="social-item">
-                    <a class="social-link facebook-link" href="#" aria-label="Седона в Facebook"></a>
+                <li class="social__item">
+                    <a class="social__link facebook-link" href="#" aria-label="Седона в Facebook"></a>
                 </li>
-                <li class="social-item">
-                    <a class="social-link youtube-link" href="#" aria-label="Седона в YouTube"></a>
+                <li class="social__item">
+                    <a class="social__link youtube-link" href="#" aria-label="Седона в YouTube"></a>
                 </li>
             </ul>
             <p class="page-footer__copyright copyright">
-                <a href="https://htmlacademy.ru/intensive/adaptive" aria-label="Ссылка на HTMLAcademy">
-                    Разработано
+                <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Ссылка на HTMLAcademy">
+                    <span class="copyright__text">Разработано</span>
+                    <img class="copyright__img" src="https://via.placeholder.com/150x150" alt="Логотип HTMLAcademy">
                 </a>
             </p>
         </footer>
