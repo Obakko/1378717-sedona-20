@@ -1,0 +1,32 @@
+.heading {
+  border: brown solid 2px;
+  text-align: center;
+}
+
+.heading__cover {
+  background-image: url("/source/img/bg-back-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.heading__cover::after {
+  content: "";
+  display: block;
+  background-image: url("/source/img/bg-intro-triangle-mobile.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-bottom: 32px;
+}
+
+.heading__title {
+  .font-view(bold;uppercase;18px;26px);
+  padding: 0 10px;
+  margin-bottom: 40px;
+}
+
+.heading__text {
+  .font-view(normal;uppercase;14px;26px);
+  color: @basic-light-black;
+  margin-bottom: 40px;
+  padding: 0 30px;
+}
