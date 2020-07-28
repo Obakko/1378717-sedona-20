@@ -1,0 +1,55 @@
+.main-nav__wrapper {
+  border: black  solid  2px;
+  position: relative;
+}
+
+.main-nav__toggle {
+  border: none;
+  background-color: transparent;
+
+  &::after {
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    width: 30px;
+    height: 22px;
+    background-image: url("../img/icon-menu.svg");
+  }
+
+  &:hover::after {
+    opacity: 0.7;
+    cursor: pointer;
+  }
+
+  &:active::after {
+    opacity: 0.5;
+    cursor: pointer;
+  }
+}
+
+.main-nav__close {
+  position: absolute;
+  right: 20px;
+  top: 17px;
+  border: none;
+  background-color: transparent;
+
+  &::after {
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    width: 23px;
+    height: 22px;
+    background-image: url("../img/icon-cross.svg");
+  }
+
+  &:hover::after {
+    opacity: 0.7;
+    cursor: pointer;
+  }
+
+  &:active::after {
+    opacity: 0.5;
+    cursor: pointer;
+  }
+}
