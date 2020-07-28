@@ -11,29 +11,25 @@
   color: @basic-white;
   text-decoration: none;
   text-align: center;
+  background-color: @basic-blue;
 
-  &:active,
+  &:hover,
   &:focus {
+    background-color: @hover-blue;
+  }
+
+  &:active {
     opacity: 0.4;
+    background-color: @active-blue;
   }
 }
 
 .site-list__item {
-  background-color: @basic-blue;
-
   &:not(:last-child) {
     border-bottom: 1px solid @basic-dark-grey;
   }
 
   &:not(:first-child) {
     border-top: 1px solid @active-grey;
-  }
-
-  &:hover {
-    background-color: @hover-blue;
-  }
-
-  &:active {
-    background-color: @active-blue;
   }
 }
