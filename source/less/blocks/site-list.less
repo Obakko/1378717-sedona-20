@@ -1,11 +1,39 @@
 .site-list {
   border: blue  solid  2px;
   list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 .site-list__link {
+  display: block;
   .font-view(bold;uppercase;18px;40px);
   color: @basic-white;
   text-decoration: none;
   text-align: center;
+
+  &:active,
+  &:focus {
+    opacity: 0.4;
+  }
+}
+
+.site-list__item {
+  background-color: @basic-blue;
+
+  &:not(:last-child) {
+    border-bottom: 1px solid @basic-dark-grey;
+  }
+
+  &:not(:first-child) {
+    border-top: 1px solid @active-grey;
+  }
+
+  &:hover {
+    background-color: @hover-blue;
+  }
+
+  &:active {
+    background-color: @active-blue;
+  }
 }

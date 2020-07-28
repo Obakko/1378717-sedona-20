@@ -21,6 +21,16 @@
     background-repeat: no-repeat;
     background-position: center center;
   }
+  &--twitter:hover::after {
+    background-color: @hover-blue;
+    cursor: pointer;
+  }
+
+  &--twitter:active::after {
+    background-color: @active-blue;
+    opacity: 0.3;
+    cursor: pointer;
+  }
 
   &--facebook::after {
     content: "";
@@ -32,6 +42,17 @@
     background-position: center center;
   }
 
+  &--facebook:hover::after {
+    background-color: @hover-blue;
+    cursor: pointer;
+  }
+
+  &--facebook:active::after {
+    background-color: @active-blue;
+    opacity: 0.3;
+    cursor: pointer;
+  }
+
   &--youtube::after {
     content: "";
     display: block;
@@ -40,5 +61,16 @@
     background-image: url("../img/icon-youtube.svg");
     background-repeat: no-repeat;
     background-position: center center;
+  }
+
+  &--youtube:hover::after {
+    background-color: @hover-blue;
+    cursor: pointer;
+  }
+
+  &--youtube:active::after {
+    background-color: @active-blue;
+    opacity: 0.3;
+    cursor: pointer;
   }
 }
