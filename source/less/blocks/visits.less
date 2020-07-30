@@ -1,3 +1,42 @@
 .visits {
   position: static;
 }
+
+.visits__list {
+  list-style: none;
+  padding: 0;
+}
+
+.visits__label {
+  display: inline-block;
+  vertical-align: middle;
+  .font-view(normal;capitalize;18px;26px);
+}
+
+.visits__input + .visits__label::before {
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  width: 56px;
+  height: 56px;
+  border-radius: 8%;
+  background-color: @special-light-grey;
+}
+
+.visits__input:checked + .visits__label::before {
+  background-image: url("../img/icon-tick.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.visits__input:checked:hover + .visits__label::before,
+.visits__input:hover + .visits__label::before {
+  background-color: @hover-grey;
+  cursor: pointer;
+}
+
+.visits__input:checked:active + .visits__label::before,
+.visits__input:active + .visits__label::before {
+  background-color: @basic-dark-grey;
+  opacity: 0.3;
+}
