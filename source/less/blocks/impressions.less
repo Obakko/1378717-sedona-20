@@ -1,3 +1,41 @@
 .impressions {
   position: static;
 }
+
+.impressions__list {
+  list-style: none;
+  padding: 0;
+}
+
+.impressions__label {
+  display: inline-block;
+  vertical-align: middle;
+  .font-view(normal;capitalize;18px;26px);
+}
+
+.impressions__input + .impressions__label::before {
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background-color: @basic-light-black;
+  border: 28px solid @special-light-grey;
+}
+
+.impressions__input:checked + .impressions__label::before {
+  border: 18px solid @special-light-grey;
+}
+
+.impressions__input:checked:hover + .impressions__label::before,
+.impressions__input:hover + .impressions__label::before {
+  border-color: @hover-grey;
+  cursor: pointer;
+}
+
+.impressions__input:checked:active + .impressions__label::before,
+.impressions__input:active + .impressions__label::before {
+  background-color: fade(@basic-light-black, 30%);
+  border-color: @active-grey;
+}
