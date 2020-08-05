@@ -1,3 +1,20 @@
 .page-header {
-  border: red  solid  2px;
+  position: relative;
+  padding-bottom: 56px;
+}
+
+.page-header__logo {
+  position: absolute;
+  left: 50%;
+  margin-left: -51px;
+}
+
+@media (min-width: @tablet-width) {
+  .page-header__logo {
+    top: 0;
+  }
+
+  .page-header {
+    padding: 0;
+  }
 }

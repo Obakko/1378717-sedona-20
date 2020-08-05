@@ -1,6 +1,7 @@
 .privilege__item {
   padding: 35px 25px 30px 69px;
   text-align: start;
+  list-style: none;
 }
 
 .privilege__heading {
@@ -10,4 +11,16 @@
 .privilege__text {
   .font-view(normal;uppercase;14px;21px);
   color: @basic-light-black;
+}
+
+@media (min-width: @tablet-width) {
+  .privilege {
+    display: flex;
+    width: 100%;
+  }
+
+  .privilege__item {
+    width: 33%;
+    height: 330px;
+  }
 }
