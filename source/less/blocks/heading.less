@@ -1,5 +1,4 @@
 .heading {
-  border: brown solid 2px;
   text-align: center;
 }
 
@@ -31,4 +30,20 @@
   color: @basic-light-black;
   margin-bottom: 40px;
   padding: 0 30px;
+}
+
+@media (min-width: @tablet-width) {
+  .heading__title {
+    padding: 0 23%;
+  }
+
+  .heading__text {
+    padding: 0 15%;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .heading__title {
+    padding: 0 30%;
+  }
 }

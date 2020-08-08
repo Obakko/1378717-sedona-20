@@ -27,3 +27,35 @@
   padding: 30px 42px;
   background-color: @basic-grey;
 }
+
+@media (min-width: @tablet-width) {
+  .list-places {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .list-places__item--town,
+  .list-places__item--bridge-devil {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+
+  .list-places__wrapper {
+    width: 33%;
+    height: 256px;
+  }
+
+  .list-places__img {
+    width: 66%;
+    height: 256px;
+  }
+
+  .list-places__item--bridge-devil .list-places__img {
+    order: -1;
+  }
+
+  .list-places__item--last {
+    width: 33%;
+  }
+}
