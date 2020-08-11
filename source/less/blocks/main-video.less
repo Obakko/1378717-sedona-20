@@ -17,10 +17,38 @@
   color: @basic-light-black;
 }
 
+.main-video__img {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
 .main-video__turntable {
   position: relative;
 }
 
 .main-video__control {
   position: absolute;
+}
+
+@media (min-width: @tablet-width) {
+  .main-video {
+    width: 648px;
+    margin: 0 auto 40px;
+  }
+
+  .main-video__heading {
+    margin-bottom: 41px;
+  }
+
+  .main-video__text {
+    margin-bottom: 80px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .main-video {
+    width: 800px;
+    margin: 0 auto 40px;
+  }
 }

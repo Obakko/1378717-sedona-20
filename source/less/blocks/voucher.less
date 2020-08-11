@@ -8,7 +8,7 @@
 
 .voucher__heading {
   margin-bottom: 33px;
-  .font-view(bold;uppercase;21px;26px);
+  .font-view(normal;uppercase;21px;26px);
 }
 
 .voucher__text {
@@ -18,5 +18,33 @@
 }
 
 .voucher__button {
+  display: block;
   margin-bottom: 49px;
+}
+
+@media (min-width: @tablet-width) {
+  .voucher__button {
+    display: inline-block;
+    vertical-align: middle;
+    padding: 15px 121px 17px;
+    margin-bottom: 66px;
+  }
+
+  .voucher__text {
+    padding: 0 155px;
+  }
+
+  .voucher__heading {
+    padding: 0 170px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .voucher__text {
+    padding: 0 371px;
+  }
+
+  .voucher__heading {
+    padding: 0 400px;
+  }
 }

@@ -1,14 +1,55 @@
-.contacts-person {
-  position: static;
-}
-
 .contacts-person__list {
   list-style: none;
   padding: 0;
 }
 
+.contacts-person__item:first-child {
+  margin-bottom: 14px;
+}
+
 .contacts-person__label {
+  display: block;
   margin-left: 17px;
+  margin-bottom: 7px;
   .font-view(normal;uppercase;14px;26px);
   color: @basic-light-black;
+  white-space: nowrap;
+  align-self: center;
+}
+
+.contacts-person__input {
+  display: inline-block;
+  vertical-align: middle;
+  height: 85px;
+}
+
+@media (min-width: @tablet-width) {
+  .contacts-person__item:first-child {
+    margin-bottom: 25px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .contacts-person__list {
+    display: flex;
+    text-align: start;
+  }
+
+  .contacts-person__label {
+    margin: 0;
+    margin-right: 40px;
+  }
+
+  .contacts-person__item {
+    display: flex;
+    width: 50%;
+
+    &:first-child {
+      padding-right: 80px;
+    }
+  }
+
+  .contacts-person__label span {
+    display: none;
+  }
 }

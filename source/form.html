@@ -44,7 +44,7 @@
             <section class="forms">
                 <h2 class="visually-hidden">Форма отзыва</h2>
                 <form class="form-review" action="https://echo.htmlacademy.ru" method="get">
-                    <fieldset class="form-review__item person">
+                    <fieldset class="form-review__item form-review__item--person person">
                         <h3 class="form-review__title">Представьтесь:</h3>
                         <ul class="person__list">
                             <li class="person__item">
@@ -61,20 +61,20 @@
                             </li>
                         </ul>
                     </fieldset>
-                    <fieldset class="form-review__item contacts-person">
+                    <fieldset class="form-review__item form-review__item--contacts-person contacts-person">
                         <h3 class="form-review__title">Контактная информация:</h3>
                         <ul class="contacts-person__list">
                             <li class="contacts-person__item">
-                                <label class="contacts-person__label" for="tel">Контактный телефон*:</label>
+                                <label class="contacts-person__label" for="tel"><span>Контактный</span> телефон*:</label>
                                 <input class="contacts-person__input input " id="tel" type="text" value="Введите телефон">
                             </li>
                             <li class="contacts-person__item">
                                 <label class="contacts-person__label" for="mail">Электронная почта*:</label>
-                                <input class="contacts-person__input input " id="mail" type="email" value="Введите e-mail">
+                                <input class="contacts-person__input input" id="mail" type="email" value="Введите e-mail">
                             </li>
                         </ul>
                     </fieldset>
-                    <fieldset class="form-review__item impressions">
+                    <fieldset class="form-review__item form-review__item--impressions impressions">
                         <h3 class="form-review__title">Ваше общее впечатление:</h3>
                         <ul class="impressions__list">
                             <li class="impressions__item">
@@ -91,7 +91,7 @@
                             </li>
                         </ul>
                     </fieldset>
-                    <fieldset class="form-review__item visits">
+                    <fieldset class="form-review__item form-review__item--visits visits">
                         <h3 class="form-review__title">Посещенные достопримечательности:</h3>
                         <ul class="visits__list">
                             <li class="visits__item">
@@ -112,21 +112,24 @@
                             </li>
                         </ul>
                     </fieldset>
-                    <fieldset class="form-review__item review-block">
+                    <fieldset class="form-review__item form-review__item--review-block review-block">
                         <h3 class="form-review__title">Опишите свои эмоции:</h3>
                         <textarea class="review-block__text" cols="30" rows="10">Опишите подробно все свои восторги</textarea>
                     </fieldset>
                     <button class="form-review__submit button" type="submit">Отправить отзыв</button>
+                    <p class="form-review__mark">* — обязательные поля</p>
                 </form>
-                <div class="popup modal-error">
+                <div class="popup modal-error popup--close">
                     <h3 class="popup__heading">ЧТО-ТО ПОШЛО НЕ ТАК!</h3>
                     <p class="popup__text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
-                    <button class="button" type="button">ОК</button>
+                    <button class="button modal-error__button" type="button">ОК</button>
                 </div>
-                <div class="popup modal-success">
+                <div class="popup modal-success popup--close">
                     <h3 class="popup__heading">Ваш отзыв отправлен!</h3>
                     <p class="popup__text">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте.</p>
-                    <button class="button" type="button">Закрыть окно</button>
+                    <div class="modal-success__wrapper">
+                        <button class="button modal-success__button" type="button">Закрыть окно</button>
+                    </div>
                 </div>
             </section>
         </main>

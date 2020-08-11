@@ -17,6 +17,7 @@
   content: "";
   display: inline-block;
   vertical-align: middle;
+  margin-right: 29px;
   width: 56px;
   height: 56px;
   border-radius: 8%;
@@ -39,4 +40,41 @@
 .visits__input:active + .visits__label::before {
   background-color: @basic-dark-grey;
   opacity: 0.3;
+}
+
+@media (min-width: @tablet-width) {
+  .visits .form-review__title {
+    padding: 0 169px;
+    margin-bottom: 47px;
+  }
+
+  .visits__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .visits__item {
+    width: 35%;
+    margin-bottom: 42px;
+    margin-right: 50px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .visits .form-review__title {
+    padding: 0 220px;
+  }
+
+  .visits__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .visits__item {
+    width: 20%;
+    margin-bottom: 42px;
+    margin-right: 50px;
+  }
 }

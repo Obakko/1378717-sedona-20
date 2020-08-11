@@ -1,3 +1,30 @@
 .modal-success {
-  position: static;
+  position: absolute;
+  top: 1700px;
+}
+
+.modal-success__wrapper {
+  background-color: @special-light-grey;
+  padding: 20px 0;
+}
+
+.modal-success__button {
+  width: 280px;
+  padding: 18px 0 14px;
+}
+
+@media (min-width: @tablet-width) {
+  .modal-success {
+    padding-top: 100px;
+    top: 1000px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .modal-success {
+    width: 640px;
+    margin-left: -320px;
+    left: 50%;
+    top: 850px;
+  }
 }
