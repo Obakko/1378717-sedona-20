@@ -17,6 +17,7 @@
   content: "";
   display: inline-block;
   vertical-align: middle;
+  margin-right: 26px;
   width: 56px;
   height: 56px;
   border-radius: 50%;
@@ -38,4 +39,15 @@
 .impressions__input:active + .impressions__label::before {
   background-color: fade(@basic-light-black, 30%);
   border-color: @active-grey;
+}
+
+@media (min-width: @tablet-width) {
+  .impressions .form-review__title {
+    text-align: start;
+    margin-bottom: 60px;
+  }
+
+  .impressions__item {
+    margin-bottom: 30px;
+  }
 }
