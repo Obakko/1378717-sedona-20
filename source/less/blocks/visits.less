@@ -7,6 +7,10 @@
   padding: 0;
 }
 
+.visits__item {
+  margin-bottom: 24px;
+}
+
 .visits__label {
   display: inline-block;
   vertical-align: middle;
@@ -43,15 +47,14 @@
 }
 
 @media (min-width: @tablet-width) {
-  .visits .form-review__title {
-    padding: 0 169px;
-    margin-bottom: 47px;
-  }
-
   .visits__list {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+  }
+
+  .visits__title {
+    margin-bottom: 48px;
   }
 
   .visits__item {
@@ -62,10 +65,6 @@
 }
 
 @media (min-width: @desktop-width) {
-  .visits .form-review__title {
-    padding: 0 220px;
-  }
-
   .visits__list {
     display: flex;
     flex-wrap: wrap;

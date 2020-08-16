@@ -1,10 +1,7 @@
-.form-review {
-  padding: 0 25px;
-}
-
 .form-review__item {
-  padding: 0;
+  padding: 0 20px;
   border: none;
+  border-top: 1px solid @hover-grey;
 }
 
 .form-review__title {
@@ -16,6 +13,13 @@
   display: inline-block;
   vertical-align: middle;
   width: 100%;
+}
+
+.form-review__block-down {
+  width: 100%;
+  padding: 0 20px;
+  display: flex;
+  margin-bottom: 48px;
 }
 
 .form-review__mark {
@@ -31,7 +35,13 @@
     padding: 0 50px;
   }
 
+  .form-review__title {
+    padding: 0 169px;
+  }
+
   .form-review__item {
+    padding: 0;
+
     &--person {
       width: 50%;
       margin: 0;
@@ -59,6 +69,17 @@
     }
   }
 
+  .form-review--right-position {
+    padding: 0;
+    text-align: start;
+    margin-bottom: 50px;
+  }
+
+  .form-review__block-down {
+    padding: 0;
+    margin-bottom: 48px;
+  }
+
   .form-review__submit {
     width: 50%;
     margin: 0;
@@ -68,5 +89,11 @@
     display: block;
     width: 50%;
     text-align: end;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .form-review__title {
+    padding: 0 220px;
   }
 }

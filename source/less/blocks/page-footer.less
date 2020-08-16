@@ -1,16 +1,33 @@
 .page-footer {
   text-align: center;
-  padding: 30px 20px 23px;
+  padding: 39px 20px 26px;
 }
 
 .page-footer__contacts {
-  .font-view (bold;uppercase;21px;26px);
+  margin: 0;
+  .font-view (normal;uppercase;21px;26px);
   margin-bottom: 35px;
+}
+
+.page-footer__social {
+  margin-bottom: 40px;
+}
+
+.page-footer__copyright {
+  margin: 0;
 }
 
 @media (min-width: @tablet-width) {
   .page-footer {
     display: flex;
-    justify-content: space-around;
+    min-height: 120px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 36px 61px;
+  }
+
+  .page-footer__social,
+  .page-footer__contacts {
+    margin: 0;
   }
 }

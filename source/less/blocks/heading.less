@@ -6,6 +6,7 @@
   background-color: @basic-dark-grey;
   background-image: url("../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
+  padding: 0;
 
   &::after {
     content: "";
@@ -15,12 +16,13 @@
     background-image: url("../img/bg-intro-triangle-mobile.svg");
     background-repeat: no-repeat;
     background-position: bottom;
+    background-size: 100%;
     margin-bottom: 32px;
   }
 }
 
 .heading__title {
-  .font-view(bold;uppercase;18px;26px);
+  .font-view(normal;uppercase;18px;26px);
   padding: 0 10px;
   margin-bottom: 40px;
 }
@@ -29,7 +31,7 @@
   .font-view(normal;uppercase;14px;26px);
   color: @basic-light-black;
   margin-bottom: 40px;
-  padding: 0 30px;
+  padding: 0 20px;
 }
 
 @media (min-width: @tablet-width) {
@@ -38,12 +40,20 @@
   }
 
   .heading__text {
-    padding: 0 15%;
+    padding: 0 135px;
+  }
+
+  .heading__text--photo-site {
+    padding: 0 170px;
   }
 }
 
 @media (min-width: @desktop-width) {
   .heading__title {
-    padding: 0 30%;
+    padding: 0 350px;
+  }
+
+  .heading__text--photo-site {
+    padding: 0 380px;
   }
 }
