@@ -2,12 +2,12 @@
   display: flex;
   flex-direction: column;
   padding: 0;
-  padding-bottom: 35px;
+  padding-top: 20px;
+  padding-bottom: 23px;
 }
 
 .privilege__item {
-  padding: 35px 25px 0 69px;
-  min-height: 139px;
+  padding: 15px 25px 13px 69px;
   text-align: start;
   list-style: none;
 }
@@ -15,13 +15,17 @@
 .privilege__heading {
   margin: 0;
   .font-view(bold;uppercase;18px;26px);
-  margin-bottom: 26px;
+  margin-bottom: 15px;
 }
 
 .privilege__text {
   margin: 0;
   .font-view(normal;uppercase;14px;21px);
   color: @basic-light-black;
+
+  & br {
+    display: none;
+  }
 }
 
 @media (min-width: @tablet-width) {
@@ -31,10 +35,11 @@
     flex-direction: row;
     width: 100%;
     text-align: center;
+    margin-bottom: 2px;
   }
 
   .privilege__item {
-    width: 33%;
+    width: 33.33%;
     min-height: 330px;
     padding: 158px 31px 0;
     text-align: center;
@@ -45,16 +50,17 @@
   }
 
   .privilege__heading {
-    margin-bottom: 34px;
+    .font-view(normal;uppercase;21px;26px);
+    margin-bottom: 23px;
   }
 }
 
 @media (min-width: @desktop-width) {
   .privilege__item {
     padding: 158px 70px 0;
+  }
 
-    &:last-child {
-      padding: 158px 100px 0;
-    }
+  .privilege__text br {
+    display: block;
   }
 }

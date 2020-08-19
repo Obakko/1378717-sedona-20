@@ -4,7 +4,8 @@
 
 .list-places__wrapper {
   background-color: @basic-blue;
-  padding: 56px 13px 42px;
+  padding: 35px 13px 25px;
+  min-height: 190px;
   color: @basic-white;
   .font-view(normal;uppercase;14px;21px);
 
@@ -16,17 +17,25 @@
 .list-places__heading {
   margin: 0;
   .font-view(normal;uppercase;18px;26px);
-  margin-bottom: 20px;
+  margin-bottom: 11px;
+
+  & br {
+    display: none;
+  }
 }
 
 .list-places__number {
   display: block;
-  margin-bottom: 24px;
+  margin-bottom: 17px;
 }
 
 .list-places__text {
   margin: 0;
   color: @basic-light-black;
+
+  & br {
+    display: none;
+  }
 }
 
 .list-places__item {
@@ -35,7 +44,7 @@
 
 .list-places__item--last {
   position: relative;
-  padding: 26px 20px 24px;
+  padding: 25px 35px 20px;
   background-color: @basic-grey;
   .font-view();
 
@@ -50,10 +59,35 @@
   }
 }
 
+.list-places__item--last .list-places__number {
+  margin-bottom: 13px;
+}
+
 @media (min-width: @tablet-width) {
   .list-places {
     display: flex;
     flex-wrap: wrap;
+  }
+
+  .list-places__heading {
+    padding: 0 10px;
+    font-size: 21px;
+
+    & br {
+      display: block;
+    }
+  }
+
+  .list-places__number {
+    margin-bottom: 25px;
+  }
+
+  .list-places__text {
+    line-height: 21px;
+
+    & br {
+      display: block;
+    }
   }
 
   .list-places__item {
@@ -68,12 +102,13 @@
   }
 
   .list-places__wrapper {
+    min-width: 256px;
     width: 33.33%;
-    padding: 40px 32px 15px;
+    padding: 42px 30px 15px;
   }
 
   .list-places__img {
-    width: 66%;
+    width: 66.66%;
     height: 256px;
   }
 
@@ -82,21 +117,41 @@
   }
 
   .list-places__item--last {
-    padding: 42px 38px 0;
-    width: 33%;
+    padding: 42px 39px 0;
+    width: 33.33%;
   }
 
-  .list-places__heading {
-    padding: 0 30px;
+  .list-places__item--last .list-places__number {
+    margin-bottom: 23px;
   }
 }
 
 @media (min-width: @desktop-width) {
   .list-places__wrapper {
-    padding: 40px 72px 15px;
+    padding: 46px 72px 15px;
+  }
+
+  .list-places__heading {
+    padding: 0 20px;
   }
 
   .list-places__item--bridge-devil .list-places__wrapper {
-    padding: 40px 90px 15px;
+    padding: 47px 90px 15px;
+  }
+
+  .list-places__text {
+    & br {
+      display: none;
+    }
+  }
+
+  .list-places__item--last {
+    .list-places__heading {
+      padding: 0 90px;
+    }
+
+    .list-places__text {
+      padding: 0 19px;
+    }
   }
 }

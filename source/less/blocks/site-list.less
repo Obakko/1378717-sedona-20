@@ -41,7 +41,7 @@
     flex-wrap: wrap;
     align-items: center;
     list-style: none;
-    padding: 0 27px;
+    padding: 0;
   }
 
   .site-list__item:last-child .site-list__link {
@@ -58,17 +58,17 @@
 
     &:nth-child(3) .site-list__link,
     &:nth-child(4) .site-list__link {
+      padding-left: 8px;
       box-shadow: none;
-      text-align: end;
     }
   }
 
   .site-list__link {
     background-color: transparent;
+    padding: 0;
     box-shadow: none;
     color: @basic-black;
     .font-view(normal;uppercase;14px;26px);
-    text-align: start;
     margin: 0;
 
     &:hover,
@@ -101,6 +101,20 @@
 
 @media (min-width: @desktop-width) {
   .site-list {
-    padding: 0 80px;
+    padding: 0;
+  }
+
+  .site-list__item {
+    &:nth-child(2) .site-list__link {
+      padding-left: -2px;
+    }
+
+    &:nth-child(3) .site-list__link {
+      padding-left: 1px;
+    }
+
+    &:nth-child(4) .site-list__link {
+      padding-left: 2px;
+    }
   }
 }
