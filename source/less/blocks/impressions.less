@@ -5,23 +5,24 @@
 .impressions__list {
   list-style: none;
   padding: 0;
+  margin-bottom: 20px;
 }
 
 .impressions__item {
-  margin-bottom: 21px;
+  margin-bottom: 15px;
 }
 
 .impressions__label {
   display: inline-block;
   vertical-align: middle;
-  .font-view(normal;capitalize;18px;26px);
+  .font-view(normal;none;18px;26px);
 }
 
 .impressions__input + .impressions__label::before {
   content: "";
   display: inline-block;
   vertical-align: middle;
-  margin-right: 26px;
+  margin-right: 22px;
   width: 56px;
   height: 56px;
   border-radius: 50%;
@@ -46,7 +47,16 @@
 }
 
 @media (min-width: @tablet-width) {
+  .impressions__list {
+    margin: 0;
+  }
+
   .impressions__item {
-    margin-bottom: 30px;
+    margin-bottom: 22px;
+  }
+
+  .impressions__input + .impressions__label::before {
+    content: "";
+    margin-right: 20px;
   }
 }

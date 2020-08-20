@@ -16,7 +16,7 @@
                   <span class="visually-hidden">Открыть меню</span>
                 </button>
                 <div class="main-nav__wrapper">
-                    <button class="main-nav__close popup--close" type="button">
+                    <button class="main-nav__close" type="button">
                       <span class="visually-hidden">Закрыть меню</span>
                     </button>
                     <ul class="main-nav__list site-list">
@@ -32,8 +32,8 @@
             </a>
         </header>
         <main class="page-main">
-            <section class="heading heading--other-page">
-                <div class="heading__cover heading__cover--video">
+            <section class="heading heading--other-page heading--forms">
+                <div class="heading__cover">
                     <img class="heading__slogan" src="img/text-sedona.svg" width="229" height="39" alt="Sedona">
                 </div>
                 <h1 class="heading__title">Оставьте свой отзыв</h1>
@@ -66,11 +66,15 @@
                         <ul class="contacts-person__list">
                             <li class="contacts-person__item">
                                 <label class="contacts-person__label" for="tel"><span>Контактный</span> телефон*:</label>
-                                <input class="contacts-person__input input " id="tel" type="text" value="Введите телефон">
+                                <div class="contacts-person__wrapper-input contacts-person__wrapper-input--tel">
+                                    <input class="contacts-person__input contacts-person__input--tel input" id="tel" type="text" value="Введите телефон">
+                                </div>
                             </li>
                             <li class="contacts-person__item">
                                 <label class="contacts-person__label" for="mail">Электронная почта*:</label>
-                                <input class="contacts-person__input input" id="mail" type="email" value="Введите e-mail">
+                                <div class="contacts-person__wrapper-input contacts-person__wrapper-input--mail">
+                                    <input class="contacts-person__input input" id="mail" type="email" value="Введите e-mail">
+                                </div>
                             </li>
                         </ul>
                     </fieldset>
@@ -92,7 +96,7 @@
                         </ul>
                     </fieldset>
                     <fieldset class="form-review__item form-review__item--visits visits">
-                        <h3 class="form-review__title visits__title">Посещенные достопримечательности:</h3>
+                        <h3 class="form-review__title visits__title">Посещенные<br> достопримечательности:</h3>
                         <ul class="visits__list">
                             <li class="visits__item">
                                 <input class="visits__input visually-hidden" name="bridge-devil" type="checkbox" id="bridge">
@@ -155,7 +159,6 @@
             </p>
         </footer>
     </div>
-    <script src="js/navigation.js"></script>
 </body>
 
 </html>

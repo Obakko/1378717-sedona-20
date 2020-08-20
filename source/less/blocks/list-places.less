@@ -102,9 +102,13 @@
   }
 
   .list-places__wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     min-width: 256px;
     width: 33.33%;
-    padding: 42px 30px 15px;
+    padding: 10px 35px 15px;
   }
 
   .list-places__img {
@@ -119,6 +123,10 @@
   .list-places__item--last {
     padding: 42px 39px 0;
     width: 33.33%;
+
+    &::before {
+      display: none;
+    }
   }
 
   .list-places__item--last .list-places__number {
@@ -128,7 +136,7 @@
 
 @media (min-width: @desktop-width) {
   .list-places__wrapper {
-    padding: 46px 72px 15px;
+    padding: 9px 72px 15px;
   }
 
   .list-places__heading {
@@ -136,7 +144,7 @@
   }
 
   .list-places__item--bridge-devil .list-places__wrapper {
-    padding: 47px 90px 15px;
+    padding: 9px 90px 15px;
   }
 
   .list-places__text {
@@ -151,7 +159,11 @@
     }
 
     .list-places__text {
-      padding: 0 19px;
+      padding: 0 25px;
     }
+  }
+
+  .list-places__item--padding .list-places__text {
+    padding: 0 20px;
   }
 }
