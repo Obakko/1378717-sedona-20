@@ -1,26 +1,67 @@
+.privilege {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0;
+  padding-top: 20px;
+  padding-bottom: 23px;
+}
+
 .privilege__item {
-  padding: 35px 25px 30px 69px;
+  width: 320px;
+  padding: 15px 25px 13px 69px;
   text-align: start;
   list-style: none;
 }
 
 .privilege__heading {
+  margin: 0;
   .font-view(bold;uppercase;18px;26px);
+  margin-bottom: 15px;
 }
 
 .privilege__text {
+  margin: 0;
   .font-view(normal;uppercase;14px;21px);
   color: @basic-light-black;
+
+  & br {
+    display: none;
+  }
 }
 
 @media (min-width: @tablet-width) {
   .privilege {
+    padding: 0;
     display: flex;
+    flex-direction: row;
     width: 100%;
+    text-align: center;
   }
 
   .privilege__item {
-    width: 33%;
+    width: 33.33%;
     min-height: 330px;
+    padding: 158px 31px 0;
+    text-align: center;
+
+    &:nth-child(2) {
+      padding: 158px 50px 0;
+    }
+  }
+
+  .privilege__heading {
+    .font-view(normal;uppercase;21px;26px);
+    margin-bottom: 23px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .privilege__item {
+    padding: 158px 70px 0;
+  }
+
+  .privilege__text br {
+    display: block;
   }
 }

@@ -5,6 +5,7 @@
 .person__list {
   list-style: none;
   padding: 0;
+  margin: 0;
 }
 
 .person__item {
@@ -14,16 +15,21 @@
   margin-bottom: 20px;
 }
 
+.person__item:last-child {
+  margin-bottom: 0;
+}
+
 .person__label {
   .font-view(normal;uppercase;14px;26px);
   color: @basic-light-black;
-  margin-right: 13px;
-  margin-top: 25px;
+  margin-right: 11px;
+  margin-top: 17px;
 }
 
 @media (min-width: @tablet-width) {
-  .person .form-review__title {
-    text-align: start;
-    margin-bottom: 50px;
+  .person {
+    padding: 0 0 0 59px;
+    margin-bottom: 70px;
+    border-left: 1px solid @dash-color;
   }
 }

@@ -1,10 +1,14 @@
 .like {
-  position: static;
+  min-width: 64px;
+  display: flex;
+  align-items: flex-start;
 }
 
 .like__button {
   display: inline-block;
   vertical-align: middle;
+  margin-right: 14px;
+  margin-top: 1px;
   width: 23px;
   height: 23px;
   border: none;
@@ -16,4 +20,11 @@
 
 .like__number {
   .font-view (bold);
+  margin-top: 3px;
+}
+
+@media (min-width: @tablet-width) {
+  .like__button {
+    margin-right: 10px;
+  }
 }

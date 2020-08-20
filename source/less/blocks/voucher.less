@@ -3,48 +3,74 @@
 }
 
 .voucher__block {
-  padding: 35px 20px 0;
+  padding: 17px 20px 0;
 }
 
 .voucher__heading {
-  margin-bottom: 33px;
+  margin-bottom: 20px;
   .font-view(normal;uppercase;21px;26px);
 }
 
 .voucher__text {
-  margin-bottom: 33px;
+  margin-bottom: 29px;
   .font-view(normal;uppercase;14px;24px);
   color: @basic-light-black;
+
+  & br {
+    display: none;
+  }
 }
 
 .voucher__button {
   display: block;
+  padding: 15px 32px 18px;
   margin-bottom: 49px;
 }
 
 @media (min-width: @tablet-width) {
+  .voucher__block {
+    padding-top: 30px;
+  }
+
   .voucher__button {
     display: inline-block;
     vertical-align: middle;
-    padding: 15px 121px 17px;
-    margin-bottom: 66px;
+    padding: 15px 137px 17px;
+    margin-bottom: 58px;
   }
 
   .voucher__text {
-    padding: 0 155px;
+    padding: 0 130px;
+    margin-bottom: 39px;
+
+    & br {
+      display: block;
+    }
   }
 
   .voucher__heading {
+    font-size: 30px;
+    line-height: 26px;
     padding: 0 170px;
+    margin-bottom: 34px;
   }
 }
 
 @media (min-width: @desktop-width) {
+  .voucher__block {
+    padding-top: 30px;
+  }
+
   .voucher__text {
-    padding: 0 371px;
+    padding: 0 350px;
+    margin-bottom: 44px;
   }
 
   .voucher__heading {
     padding: 0 400px;
+  }
+
+  .voucher__button {
+    margin-bottom: 65px;
   }
 }
