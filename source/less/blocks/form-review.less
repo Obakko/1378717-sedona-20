@@ -1,5 +1,5 @@
 .form-review__item {
-  padding: 20px 19px 4px;
+  padding: 20px 19px 0;
   border: none;
   border-top: 1px solid @hover-grey;
 }
@@ -35,6 +35,7 @@
     display: flex;
     flex-wrap: wrap;
     padding: 0 60px;
+    margin-bottom: 19px;
   }
 
   .form-review__title {
@@ -112,11 +113,17 @@
   }
 
   .form-review__submit {
+    font-size: 19px;
     width: 50%;
     margin: 0;
   }
 
   .form-review__mark {
+    margin: 0;
+    margin-top: 18px;
+    text-transform: uppercase;
+    font-size: 14px;
+    line-height: 26px;
     display: block;
     width: 50%;
     text-align: end;
@@ -124,11 +131,19 @@
 }
 
 @media (min-width: @desktop-width) {
-  .form-review__title {
-    padding: 0 220px;
+  .form-review {
+    padding: 0 120px;
+    margin-bottom: 24px;
   }
 
   .form-review__title--right-position {
-    padding: 0;
+    padding-left: 79px;
+  }
+
+  .form-review__title {
+    &::after,
+    &::before {
+      width: 29%;
+    }
   }
 }

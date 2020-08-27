@@ -18,11 +18,11 @@
 
 .control__slider {
   position: absolute;
-  top: -5px;
-  left: 18%;
+  top: -3px;
+  left: 15%;
   border: none;
-  height: 13px;
-  width: 13px;
+  height: 10px;
+  width: 6px;
   border-radius: 50%;
   background-color: white;
 }
@@ -57,7 +57,7 @@
 .control__subtitles {
   background-image: url("../img/icon-video-subtitles.svg");
   background-repeat: no-repeat;
-  background-position: center center;
+  background-position: 33px center;
   opacity: 0.8;
   padding: 0;
   border: none;
@@ -107,6 +107,11 @@
     padding: 45px 156px 45px 93px;
   }
 
+  .control__slider {
+    top: -4px;
+    left: 28%;
+  }
+
   .control__button-play {
     position: absolute;
     bottom: 0;
@@ -119,7 +124,7 @@
     background-color: transparent;
     background-image: url("../img/icon-video-replay.svg");
     background-repeat: no-repeat;
-    background-position: center center;
+    background-position: 35px 35px;
     opacity: 1;
     width: 15%;
 
@@ -137,7 +142,7 @@
     background-color: transparent;
     background-image: url("../img/icon-video-subtitles.svg");
     background-repeat: no-repeat;
-    background-position: center right;
+    background-position: 36px 35px;
     opacity: 1;
     width: 10%;
 
@@ -167,5 +172,21 @@
     &:active {
       opacity: 0.3;
     }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .control__slider {
+    left: 20%;
+  }
+
+  .control__reversed,
+  .control__subtitles,
+  .control__full-screen {
+    width: 10%;
+  }
+
+  .control__full-screen {
+    background-position: 18px 35px;
   }
 }

@@ -16,7 +16,7 @@
 }
 
 .person__item:last-child {
-  margin-bottom: 0;
+  margin-bottom: 24px;
 }
 
 .person__label {
@@ -28,8 +28,23 @@
 
 @media (min-width: @tablet-width) {
   .person {
-    padding: 0 0 0 59px;
-    margin-bottom: 70px;
+    padding: 0 0 0 57px;
+    margin-bottom: 48px;
     border-left: 1px solid @dash-color;
+  }
+
+  .person__title {
+    margin-bottom: 56px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .person {
+    padding: 0;
+    margin-bottom: 45px;
+  }
+
+  .person__list {
+    padding-left: 80px;
   }
 }
