@@ -2,7 +2,7 @@
   list-style: none;
   margin: 0;
   padding: 0;
-  margin-bottom: 21px;
+  margin-bottom: 24px;
 }
 
 .contacts-person__title {
@@ -25,6 +25,7 @@
 
 .contacts-person__wrapper-input {
   position: relative;
+  width: 100%;
 
   &::after {
     content: "";
@@ -36,7 +37,7 @@
     height: 100%;
     background-color: @special-grey;
     background-image: url("../img/icon-mail.svg");
-    background-position: center center;
+    background-position: 22px 19px;
     background-repeat: no-repeat;
     background-size: 18px 16px;
   }
@@ -51,7 +52,7 @@
 
 @media (min-width: @tablet-width) {
   .contacts-person__list {
-    margin-bottom: 53px;
+    margin-bottom: 50px;
   }
 
   .contacts-person__item:first-child {
@@ -72,19 +73,26 @@
   .contacts-person__list {
     display: flex;
     text-align: start;
+    margin-bottom: 51px;
+  }
+
+  .contacts-person__title {
+    margin-bottom: 73px;
   }
 
   .contacts-person__label {
     margin: 0;
-    margin-right: 40px;
+    margin-right: 15px;
   }
 
   .contacts-person__item {
+    margin: 0;
     display: flex;
     width: 50%;
 
     &:first-child {
       padding-right: 80px;
+      margin: 0;
     }
   }
 

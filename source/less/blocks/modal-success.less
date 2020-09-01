@@ -1,3 +1,14 @@
+.modal-success {
+  min-width: 320px;
+  width: 100%;
+  padding-top: 20px;
+}
+
+.modal-success__text {
+  padding: 0 50px;
+  margin-bottom: 40px;
+}
+
 .modal-success__wrapper {
   background-color: @special-light-grey;
   padding: 20px 0;
@@ -5,20 +16,24 @@
 
 .modal-success__button {
   width: 280px;
-  padding: 18px 0 14px;
+  font-size: 18px;
 }
 
 @media (min-width: @tablet-width) {
   .modal-success {
     top: 30%;
-  }
-}
-
-@media (min-width: @desktop-width) {
-  .modal-success {
-    width: 640px;
     margin-left: -320px;
     left: 50%;
-    top: 30%;
+    width: 640px;
+  }
+
+  .modal-success__wrapper {
+    padding: 47px 0;
+  }
+
+  .modal-success__button {
+    font-size: 21px;
+    line-height: 26px;
+    width: 458px;
   }
 }

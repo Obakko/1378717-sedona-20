@@ -45,7 +45,8 @@
 }
 
 .heading__title {
-  .font-view(normal;uppercase;18px;26px);
+  font-family: "PT Sans bold", "Arial", sans-serif;
+  .font-view(bold;uppercase;18px;26px);
   padding: 0 30px;
   margin-bottom: 30px;
 }
@@ -63,8 +64,8 @@
 .heading--other-page {
   .heading__cover {
     min-height: 158px;
-    background-size: auto auto;
-    background-position: -224px -230px;
+    background-size: 768px auto;
+    background-position-y: -230px;
   }
 
   .heading__slogan {
@@ -135,9 +136,9 @@
   .heading--other-page {
     .heading__cover {
       min-height: 292px;
-      margin-bottom: 62px;
-      background-size: auto auto;
-      background-position: 0 -227px;
+      margin-bottom: 58px;
+      background-size: 100%;
+      background-position-y: -227px;
     }
 
     .heading__title {
@@ -158,8 +159,12 @@
   }
 
   .heading--forms {
+    .heading__cover {
+      margin-bottom: 60px;
+    }
+
     .heading__title {
-      margin-bottom: 31px;
+      margin-bottom: 32px;
     }
 
     .heading__text {
@@ -195,7 +200,7 @@
   .heading--other-page {
     .heading__cover {
       min-height: 300px;
-      margin-bottom: 100px;
+      margin-bottom: 102px;
       background-position: 0 -218px;
     }
 
@@ -206,6 +211,17 @@
     .heading__text {
       padding: 0 378px;
       margin-bottom: 76px;
+    }
+  }
+
+  .heading--forms {
+    .heading__cover {
+      margin-bottom: 114px;
+    }
+
+    .heading__text {
+      padding: 0 380px;
+      margin-bottom: 58px;
     }
   }
 }

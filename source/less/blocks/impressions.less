@@ -5,7 +5,7 @@
 .impressions__list {
   list-style: none;
   padding: 0;
-  margin-bottom: 20px;
+  margin-bottom: 24px;
 }
 
 .impressions__item {
@@ -15,7 +15,7 @@
 .impressions__label {
   display: inline-block;
   vertical-align: middle;
-  .font-view(normal;none;18px;26px);
+  .font-view(bold;none;18px;26px);
 }
 
 .impressions__input + .impressions__label::before {
@@ -58,5 +58,11 @@
   .impressions__input + .impressions__label::before {
     content: "";
     margin-right: 20px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .impressions {
+    padding-left: 2px;
   }
 }

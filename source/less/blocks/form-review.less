@@ -1,5 +1,5 @@
 .form-review__item {
-  padding: 20px 19px 4px;
+  padding: 20px 19px 0;
   border: none;
   border-top: 1px solid @hover-grey;
 }
@@ -8,13 +8,14 @@
   margin: 0;
   margin-bottom: 20px;
   text-align: center;
+  font-family: "PT Sans bold", "Arial", sans-serif;
   .font-view(bold;uppercase;18px;26px);
 }
 
 .form-review__submit {
-  display: inline-block;
-  vertical-align: middle;
-  width: 100%;
+  display: block;
+  padding: 19px 0 14px;
+  width: 280px;
 }
 
 .form-review__block-down {
@@ -35,6 +36,7 @@
     display: flex;
     flex-wrap: wrap;
     padding: 0 60px;
+    margin-bottom: 19px;
   }
 
   .form-review__title {
@@ -112,11 +114,17 @@
   }
 
   .form-review__submit {
-    width: 50%;
+    padding-right: 16px;
+    width: 324px;
     margin: 0;
   }
 
   .form-review__mark {
+    margin: 0;
+    margin-top: 18px;
+    text-transform: uppercase;
+    font-size: 14px;
+    line-height: 26px;
     display: block;
     width: 50%;
     text-align: end;
@@ -124,11 +132,24 @@
 }
 
 @media (min-width: @desktop-width) {
-  .form-review__title {
-    padding: 0 220px;
+  .form-review {
+    padding: 0 120px;
+    margin-bottom: 24px;
   }
 
   .form-review__title--right-position {
-    padding: 0;
+    padding-left: 79px;
+  }
+
+  .form-review__submit {
+    padding-right: 0;
+    width: 480px;
+  }
+
+  .form-review__title {
+    &::after,
+    &::before {
+      width: 29%;
+    }
   }
 }
