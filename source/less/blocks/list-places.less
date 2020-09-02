@@ -39,8 +39,10 @@
   }
 }
 
-.list-places__item {
-  line-height: 0em;
+.list-places__img {
+  display: block;
+  object-fit: cover;
+  width: 100%;
 }
 
 .list-places__item--last {
@@ -115,17 +117,20 @@
     justify-content: center;
     align-items: center;
     min-width: 256px;
+    min-height: 256px;
     width: 33.33%;
-    padding: 10px 35px 15px;
+    padding: 30px 35px 30px;
   }
 
   .last-places__frame {
+    position: relative;
     width: 66.66%;
   }
 
   .list-places__img {
+    position: absolute;
     width: 100%;
-    height: 256px;
+    height: 100%;
   }
 
   .list-places__item--bridge-devil .last-places__frame {
@@ -148,7 +153,7 @@
 
 @media (min-width: @desktop-width) {
   .list-places__wrapper {
-    padding: 9px 72px 15px;
+    padding: 30px 72px;
   }
 
   .list-places__heading {
@@ -156,7 +161,7 @@
   }
 
   .list-places__item--bridge-devil .list-places__wrapper {
-    padding: 9px 90px 15px;
+    padding: 30px 90px;
   }
 
   .list-places__text {
