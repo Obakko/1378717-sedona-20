@@ -38,6 +38,10 @@
     background-size: cover;
     background-position: center bottom;
   }
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/bg-back-mobile@2x.jpg");
+  }
 }
 
 .heading__slogan {
@@ -127,9 +131,15 @@
       background-image: url("../img/bg-intro-triangle-tablet.svg");
       min-height: 57px;
     }
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/bg-back-tablet@2x.jpg");
+    }
   }
 
   .heading__slogan {
+    width: 461px;
+    height: 350px;
     margin-bottom: 34px;
   }
 
@@ -148,7 +158,9 @@
     }
 
     .heading__slogan {
-      margin-bottom: 16px;
+      width: 457px;
+      height: 80px;
+      margin-bottom: 62px;
     }
 
     .heading__text {
@@ -185,6 +197,10 @@
 
     &::after {
       background-image: url("../img/bg-intro-triangle-desktop.svg");
+    }
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/bg-back-desktop@2x.jpg");
     }
   }
 
