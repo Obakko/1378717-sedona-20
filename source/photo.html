@@ -9,8 +9,11 @@
 </head>
 
 <body class="page-body">
-  <object class="icon-video-box" data="img/sprite.svg" type="image/svg+xml"> Your browser does not support SVG</object>
-  <svg class="icon-video-box" x="0px" y="0px" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve">
+  <object class="icon-box" data="img/sprite.svg" type="image/svg+xml"> Your browser does not support SVG</object>
+  <svg class="icon-box" x="0px" y="0px" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve">
+    <symbol id="icon-htmlacademy" x="0px" y="0px" width="40px" height="50px" viewBox="0 0 60 60">
+      <path id="icon-htmlacademy" d="M30.2 5h-.2l-19.7 2.1v36.2l19.7 11.7 19.7-11.7v-36.2l-19.5-2.1zm17 36.8l-17.2 10.2-17.2-10.2v-14.8l17.1 10.2v1.8l-11.7-7v1.8l11.8 7.1v1.9l-11.8-7v1.8l11.8 7 11.9-7.1v-7.6l5.3-3.2v15.1zm-.1-17l-4.7 2.8-2.2 1.3-10.3-6.1v1.8l8.8 5.3h-.1l-.2.1-1.3.7-7.3-4.3v1.8l5.8 3.4-1.4.9-4.3-2.6v1.8l2.9 1.7-2.9 1.7-17-10.1 17-10.2 17.2 10zm.1-1.8l-17.3-10.2-17.1 10.2v-13.6l17.2-1.8 17.2 1.8v13.6z"/>
+    </symbol>
     <symbol id="icon-video-replay" x="0px" y="0px" width="16px" height="20px" viewBox="0 0 16 20" enable-background="new 0 0 16 20" xml:space="preserve">
       <path id="icon-video-replay" d="M8,4V0L3,5l5,5V6c3.315,0,6,2.686,6,6s-2.685,6-6,6s-6-2.686-6-6H0c0,4.42,3.58,8,8,8s8-3.58,8-8S12.42,4,8,4z"/>
     </symbol>
@@ -23,6 +26,15 @@
         <polygon points="3,14 0,14 0,17 0,20 3,20 6,20 6,17 3,17"/>
         <polygon points="17,0 14,0 14,3 17,3 17,6 20,6 20,3 20,0"/>
         <polygon points="17,17 14,17 14,20 17,20 20,20 20,17 20,14 17,14"/>
+      </g>
+    </symbol>
+    <symbol id="icon-like" width="22px" height="20px" viewBox="0 0 22 20">
+      <g id="icon-like">
+        <g id="Core" transform="translate(-295.000000, -464.000000)">
+          <g id="thumb-up" transform="translate(295.000000, 464.000000)">
+            <path id="Shape" d="M12.383,3.646l-0.637,2.929L11.219,9H13.7h6.2v2c0,0.018,0,0.037,0.001,0.058L17,18H8V8.029 l0.014-0.015L12.383,3.646 M2,10v8V10 M13.2,0L6.6,6.6C6.2,6.9,6,7.4,6,8v10c0,1.1,0.9,2,2,2h9c0.8,0,1.5-0.5,1.8-1.2l3-7.1 C21.9,11.5,21.9,11.2,21.9,11V9H22c0-1.1-0.9-2-2-2h-6.3l1-4.6V2.1c0-0.4-0.2-0.8-0.4-1.1L13.2,0L13.2,0z M4,8H0v12h4V8L4,8z M22,9c0,0.033,0,0.044,0,0.044V9L22,9z"/>
+          </g>
+        </g>
       </g>
     </symbol>
   </svg>
@@ -68,8 +80,11 @@
                     <li class="main-list__item item-photo item-photo__link--first">
                       <a href="#" class="item-photo__link">
                         <picture>
+                          <source media="(min-width: 1200px)" srcset="img/photo-sunset-desktop@1x.webp, img/photo-sunset-desktop@2x.webp" type="image/webp">
                           <source media="(min-width: 1200px)" srcset="img/photo-sunset-desktop@1x.jpg, img/photo-sunset-desktop@2x.jpg">
+                          <source media="(min-width: 768px)" srcset="img/photo-sunset-tablet@1x.webp, img/photo-sunset-tablet@2x.webp" type="image/webp">
                           <source media="(min-width: 768px)" srcset="img/photo-sunset-tablet@1x.jpg, img/photo-sunset-tablet@2x.jpg">
+                          <source srcset="img/photo-sunset-mobile@1x.webp, img/photo-sunset-mobile@2x.webp" type="image/webp">
                           <img class="item-photo__img" src="img/photo-sunset-mobile@1x.jpg" width="280" height="280" srcset="img/photo-sunset-mobile@2x.jpg" alt="Изображение народных простор">
                         </picture>
                       </a>
@@ -78,14 +93,8 @@
                             <p class="item-photo__text">Автор фото: Борис</p>
                             <div class="item-photo__like like">
                                 <button class="like__button" type="button" aria-label="Кнопка лайка">
-                                  <svg class="like__img" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="22px" height="20px" viewBox="0 0 22 20" enable-background="new 0 0 22 20" xml:space="preserve">
-                                    <g id="Page-1">
-                                      <g id="Core" transform="translate(-295.000000, -464.000000)">
-                                        <g id="thumb-up" transform="translate(295.000000, 464.000000)">
-                                          <path id="Shape" d="M12.383,3.646l-0.637,2.929L11.219,9H13.7h6.2v2c0,0.018,0,0.037,0.001,0.058L17,18H8V8.029 l0.014-0.015L12.383,3.646 M2,10v8V10 M13.2,0L6.6,6.6C6.2,6.9,6,7.4,6,8v10c0,1.1,0.9,2,2,2h9c0.8,0,1.5-0.5,1.8-1.2l3-7.1 C21.9,11.5,21.9,11.2,21.9,11V9H22c0-1.1-0.9-2-2-2h-6.3l1-4.6V2.1c0-0.4-0.2-0.8-0.4-1.1L13.2,0L13.2,0z M4,8H0v12h4V8L4,8z M22,9c0,0.033,0,0.044,0,0.044V9L22,9z"/>
-                                        </g>
-                                      </g>
-                                    </g>
+                                  <svg class="like__img">
+                                    <use xlink:href="#icon-like"></use>
                                   </svg>
                                 </button>
                                 <span class="like__number">1350</span>
@@ -95,8 +104,11 @@
                     <li class="main-list__item item-photo">
                       <a href="#" class="item-photo__link">
                         <picture>
+                          <source media="(min-width: 1200px)" srcset="img/photo-cactus-desktop@1x.webp, img/photo-cactus-desktop@2x.webp" type="image/webp">
                           <source media="(min-width: 1200px)" srcset="img/photo-cactus-desktop@1x.jpg, img/photo-cactus-desktop@2x.jpg">
+                          <source media="(min-width: 768px)" srcset="img/photo-cactus-tablet@1x.webp, img/photo-cactus-tablet@2x.webp" type="image/webp">
                           <source media="(min-width: 768px)" srcset="img/photo-cactus-tablet@1x.jpg, img/photo-cactus-tablet@2x.jpg">
+                          <source srcset="img/photo-cactus-mobile@1x.webp, img/photo-cactus-mobile@2x.webp" type="image/webp">
                           <img class="item-photo__img" src="img/photo-cactus-mobile@1x.jpg" width="280" height="280" srcset="img/photo-cactus-mobile@2x.jpg" alt="Изображение местной растительности">
                         </picture>
                       </a>
@@ -105,14 +117,8 @@
                             <p class="item-photo__text">Автор фото: Сергей</p>
                             <div class="item-photo__like like">
                                 <button class="like__button" type="button" aria-label="Кнопка лайка">
-                                  <svg class="like__img" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="22px" height="20px" viewBox="0 0 22 20" enable-background="new 0 0 22 20" xml:space="preserve">
-                                    <g id="Page-1">
-                                      <g id="Core" transform="translate(-295.000000, -464.000000)">
-                                        <g id="thumb-up" transform="translate(295.000000, 464.000000)">
-                                          <path id="Shape" d="M12.383,3.646l-0.637,2.929L11.219,9H13.7h6.2v2c0,0.018,0,0.037,0.001,0.058L17,18H8V8.029 l0.014-0.015L12.383,3.646 M2,10v8V10 M13.2,0L6.6,6.6C6.2,6.9,6,7.4,6,8v10c0,1.1,0.9,2,2,2h9c0.8,0,1.5-0.5,1.8-1.2l3-7.1 C21.9,11.5,21.9,11.2,21.9,11V9H22c0-1.1-0.9-2-2-2h-6.3l1-4.6V2.1c0-0.4-0.2-0.8-0.4-1.1L13.2,0L13.2,0z M4,8H0v12h4V8L4,8z M22,9c0,0.033,0,0.044,0,0.044V9L22,9z"/>
-                                        </g>
-                                      </g>
-                                    </g>
+                                  <svg class="like__img">
+                                    <use xlink:href="#icon-like"></use>
                                   </svg>
                                 </button>
                                 <span class="like__number">143</span>
@@ -122,8 +128,11 @@
                     <li class="main-list__item item-photo">
                       <a href="#" class="item-photo__link">
                         <picture>
+                          <source media="(min-width: 1200px)" srcset="img/photo-roads-desktop@1x.webp, img/photo-roads-desktop@2x.webp" type="image/webp">
                           <source media="(min-width: 1200px)" srcset="img/photo-roads-desktop@1x.jpg, img/photo-roads-desktop@2x.jpg">
+                          <source media="(min-width: 768px)" srcset="img/photo-roads-tablet@1x.webp, img/photo-roads-tablet@2x.webp" type="image/webp">
                           <source media="(min-width: 768px)" srcset="img/photo-roads-tablet@1x.jpg, img/photo-roads-tablet@2x.jpg">
+                          <source srcset="img/photo-roads-mobile@1x.webp, img/photo-roads-mobile@2x.webp" type="image/webp">
                           <img class="item-photo__img" src="img/photo-roads-mobile@1x.jpg" width="280" height="280" srcset="img/photo-roads-mobile@2x.jpg" alt="Изображение дороги на север">
                         </picture>
                       </a>
@@ -132,14 +141,8 @@
                             <p class="item-photo__text">Автор фото: Петр</p>
                             <div class="item-photo__like like">
                                 <button class="like__button" type="button" aria-label="Кнопка лайка">
-                                  <svg class="like__img" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="22px" height="20px" viewBox="0 0 22 20" enable-background="new 0 0 22 20" xml:space="preserve">
-                                    <g id="Page-1">
-                                      <g id="Core" transform="translate(-295.000000, -464.000000)">
-                                        <g id="thumb-up" transform="translate(295.000000, 464.000000)">
-                                          <path id="Shape" d="M12.383,3.646l-0.637,2.929L11.219,9H13.7h6.2v2c0,0.018,0,0.037,0.001,0.058L17,18H8V8.029 l0.014-0.015L12.383,3.646 M2,10v8V10 M13.2,0L6.6,6.6C6.2,6.9,6,7.4,6,8v10c0,1.1,0.9,2,2,2h9c0.8,0,1.5-0.5,1.8-1.2l3-7.1 C21.9,11.5,21.9,11.2,21.9,11V9H22c0-1.1-0.9-2-2-2h-6.3l1-4.6V2.1c0-0.4-0.2-0.8-0.4-1.1L13.2,0L13.2,0z M4,8H0v12h4V8L4,8z M22,9c0,0.033,0,0.044,0,0.044V9L22,9z"/>
-                                        </g>
-                                      </g>
-                                    </g>
+                                  <svg class="like__img">
+                                    <use xlink:href="#icon-like"></use>
                                   </svg>
                                 </button>
                                 <span class="like__number">96</span>
@@ -149,8 +152,11 @@
                     <li class="main-list__item item-photo">
                       <a href="#" class="item-photo__link">
                         <picture>
+                          <source media="(min-width: 1200px)" srcset="img/photo-bridge-desktop@1x.webp, img/photo-bridge-desktop@2x.webp" type="image/webp">
                           <source media="(min-width: 1200px)" srcset="img/photo-bridge-desktop@1x.jpg, img/photo-bridge-desktop@2x.jpg">
+                          <source media="(min-width: 768px)" srcset="img/photo-bridge-tablet@1x.webp, img/photo-bridge-tablet@2x.webp" type="image/webp">
                           <source media="(min-width: 768px)" srcset="img/photo-bridge-tablet@1x.jpg, img/photo-bridge-tablet@2x.jpg">
+                          <source srcset="img/photo-bridge-mobile@1x.webp, img/photo-bridge-mobile@2x.webp" type="image/webp">
                           <img class="item-photo__img" src="img/photo-bridge-mobile@1x.jpg" width="280" height="280" srcset="img/photo-bridge-mobile@2x.jpg" alt="Изображение моста дьявола">
                         </picture>
                       </a>
@@ -159,14 +165,8 @@
                             <p class="item-photo__text">Автор фото: Антон</p>
                             <div class="item-photo__like like">
                                 <button class="like__button" type="button" aria-label="Кнопка лайка">
-                                  <svg class="like__img" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="22px" height="20px" viewBox="0 0 22 20" enable-background="new 0 0 22 20" xml:space="preserve">
-                                    <g id="Page-1">
-                                      <g id="Core" transform="translate(-295.000000, -464.000000)">
-                                        <g id="thumb-up" transform="translate(295.000000, 464.000000)">
-                                          <path id="Shape" d="M12.383,3.646l-0.637,2.929L11.219,9H13.7h6.2v2c0,0.018,0,0.037,0.001,0.058L17,18H8V8.029 l0.014-0.015L12.383,3.646 M2,10v8V10 M13.2,0L6.6,6.6C6.2,6.9,6,7.4,6,8v10c0,1.1,0.9,2,2,2h9c0.8,0,1.5-0.5,1.8-1.2l3-7.1 C21.9,11.5,21.9,11.2,21.9,11V9H22c0-1.1-0.9-2-2-2h-6.3l1-4.6V2.1c0-0.4-0.2-0.8-0.4-1.1L13.2,0L13.2,0z M4,8H0v12h4V8L4,8z M22,9c0,0.033,0,0.044,0,0.044V9L22,9z"/>
-                                        </g>
-                                      </g>
-                                    </g>
+                                  <svg class="like__img">
+                                    <use xlink:href="#icon-like"></use>
                                   </svg>
                                 </button>
                                 <span class="like__number">254</span>
@@ -181,8 +181,11 @@
                 </p>
                 <div class="main-video__turntable">
                   <picture>
+                    <source media="(min-width: 1200px)" srcset="img/video-desktop@1x.webp, img/video-desktop@2x.webp" type="image/webp">
                     <source media="(min-width: 1200px)" srcset="img/video-desktop@1x.jpg, img/video-desktop@2x.jpg">
+                    <source media="(min-width: 768px)" srcset="img/video-tablet@1x.webp, img/video-tablet@2x.webp" type="image/webp">
                     <source media="(min-width: 768px)" srcset="img/video-tablet@1x.jpg, img/video-tablet@2x.jpg">
+                    <source srcset="img/video-mobile@1x.webp, img/video-mobile@1x.webp" type="image/webp">
                     <img class="main-video__img" width="320" height="201" src="img/video-mobile@1x.jpg" srcset="img/video-mobile@2x.jpg" alt="Изображение моста дьявола ">
                   </picture>
                     <div class="main-video__control control ">
@@ -228,7 +231,9 @@
             <p class="page-footer__copyright copyright">
               <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Ссылка на HTMLAcademy">
                 Разработано
-                <svg class="copyright__img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60"><path d="M30.2 5h-.2l-19.7 2.1v36.2l19.7 11.7 19.7-11.7v-36.2l-19.5-2.1zm17 36.8l-17.2 10.2-17.2-10.2v-14.8l17.1 10.2v1.8l-11.7-7v1.8l11.8 7.1v1.9l-11.8-7v1.8l11.8 7 11.9-7.1v-7.6l5.3-3.2v15.1zm-.1-17l-4.7 2.8-2.2 1.3-10.3-6.1v1.8l8.8 5.3h-.1l-.2.1-1.3.7-7.3-4.3v1.8l5.8 3.4-1.4.9-4.3-2.6v1.8l2.9 1.7-2.9 1.7-17-10.1 17-10.2 17.2 10zm.1-1.8l-17.3-10.2-17.1 10.2v-13.6l17.2-1.8 17.2 1.8v13.6z"/></svg>
+                <svg class="copyright__img">
+                  <use xlink:href="#icon-htmlacademy"></use>
+                </svg>
               </a>
           </p>
         </footer>

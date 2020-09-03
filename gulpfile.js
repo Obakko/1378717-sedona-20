@@ -6,6 +6,16 @@ const postcss = require("gulp-postcss");
 const autoprefixer = require("autoprefixer");
 const sync = require("browser-sync").create();
 
+// Webp
+
+const webp = require("gulp-webp");
+const createWebp = () => {
+  return gulp.src("source/img/**/*.{png,jpg}")
+    .pipe(webp({quality: 75}))
+    .pipe(gulp.dest("source/img"))
+}
+exports.webp = createWebp;
+
 // Styles
 
 const styles = () => {
