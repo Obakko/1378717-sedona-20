@@ -49,3 +49,13 @@ const watcher = () => {
 exports.default = gulp.series(
   styles, server, watcher
 );
+
+// Webp
+
+const webp = require("gulp-webp");
+const createWebp = () => {
+  return gulp.src("source/img/**/*.{png,jpg}")
+    .pipe(webp({quality: 75}))
+    .pipe(gulp.dest("source/img"))
+}
+exports.webp = createWebp;
