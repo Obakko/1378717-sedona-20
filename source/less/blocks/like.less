@@ -7,15 +7,16 @@
 .like__button {
   display: inline-block;
   vertical-align: middle;
+  padding: 0;
   margin-right: 14px;
   margin-top: 1px;
-  width: 23px;
-  height: 23px;
   border: none;
   background-color: transparent;
-  background-image: url("../img/icon-like.svg");
-  background-repeat: no-repeat;
-  background-position: center center;
+}
+
+.like__img {
+  fill: @basic-black;
+  opacity: 0.3;
 }
 
 .like__number {
@@ -26,5 +27,12 @@
 @media (min-width: @tablet-width) {
   .like__button {
     margin-right: 10px;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .like__img {
+    fill: @basic-white;
+    opacity: 1;
   }
 }
