@@ -1,11 +1,10 @@
 .input {
   border: 4px solid transparent;
   min-width: 150px;
-  width: 100%;
   min-height: 58px;
   padding: 10px 22px 6px 20px;
   font-family: "PT Sans bold", "Arial", sans-serif;
-  .font-view(bold;none;18px;26px);
+  .font-view(normal;none;18px;26px);
   background-color: @special-light-grey;
 
   &:hover {
@@ -13,14 +12,13 @@
     cursor: pointer;
   }
 
-  &:active,
   &:focus {
-    padding: 8px 22px 7px 15px;
+    padding: 10px 22px 6px 20px;
     border: 4px solid @hover-grey;
     background-color: @basic-white;
   }
 }
 
 .input--warning {
-  border-bottom: 4px solid red;
+  border: 4px solid red;
 }

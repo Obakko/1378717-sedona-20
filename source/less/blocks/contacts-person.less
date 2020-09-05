@@ -24,22 +24,19 @@
 }
 
 .contacts-person__wrapper-input {
-  position: relative;
+  display: grid;
+  grid-template-columns: 1fr min-content;
   width: 100%;
 
   &::after {
     content: "";
-    position: absolute;
-    top: 0;
-    right: 0;
     display: block;
     width: 58px;
-    height: 100%;
     background-color: @special-grey;
     background-image: url("../img/icon-mail.svg");
     background-position: 22px 19px;
     background-repeat: no-repeat;
-    background-size: 18px 16px;
+    background-size: 18px center;
   }
 }
 
