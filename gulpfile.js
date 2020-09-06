@@ -116,8 +116,6 @@ exports.sprite = sprite;
 const copy = () => {
   return gulp.src([
   "source/fonts/**/*.{woff,woff2}",
-  "source/js/**",
-  "source/*.html",
   "source/img/**.webp"
   ], {
   base: "source"
@@ -135,10 +133,39 @@ const clean = () => {
 };
 exports.clean = clean;
 
+// HTML min
+
+const htmlmin = require('gulp-htmlmin');
+
+const html = () => {
+  return gulp.src("source/*.html")
+    .pipe(htmlmin({ collapseWhitespace: true }))
+    .pipe(gulp.dest("build"));
+};
+exports.html = html;
+
+// JS min
+
+var jsmin = require('gulp-uglify');
+var pipeline = require('readable-stream').pipeline;
+
+const uglify = () => {
+  return pipeline(
+    gulp.src('source/js/*.js'),
+    jsmin(),
+    gulp.dest('build/js')
+  );
+};
+exports.uglify = uglify;
+
+//Assembly
+
 const build = gulp.series(
   clean,
   copy,
   styles,
+  html,
+  uglify,
   sprite,
   images,
 );
