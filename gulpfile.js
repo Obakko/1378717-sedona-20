@@ -7,7 +7,7 @@ const autoprefixer = require("autoprefixer");
 const sync = require("browser-sync").create();
 const csso = require("gulp-csso");
 const rename = require("gulp-rename");
-const imagemin = require('gulp-imagemin');
+const imagemin = require("gulp-imagemin");
 
 //Img min
 
@@ -66,7 +66,7 @@ exports.source = source;
 const server = (done) => {
   sync.init({
     server: {
-      baseDir: 'source'
+      baseDir: "source"
     },
     cors: true,
     notify: false,
@@ -135,7 +135,7 @@ exports.clean = clean;
 
 // HTML min
 
-const htmlmin = require('gulp-htmlmin');
+const htmlmin = require("gulp-htmlmin");
 
 const html = () => {
   return gulp.src("source/*.html")
@@ -146,14 +146,14 @@ exports.html = html;
 
 // JS min
 
-var jsmin = require('gulp-uglify');
-var pipeline = require('readable-stream').pipeline;
+var jsmin = require("gulp-uglify");
+var pipeline = require("readable-stream").pipeline;
 
 const uglify = () => {
   return pipeline(
-    gulp.src('source/js/*.js'),
+    gulp.src("source/js/*.js"),
     jsmin(),
-    gulp.dest('build/js')
+    gulp.dest("build/js")
   );
 };
 exports.uglify = uglify;
