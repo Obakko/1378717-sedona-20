@@ -19,14 +19,20 @@
 .visits__label {
   display: flex;
   align-items: center;
-  white-space: nowrap;
   .font-view(bold;none;18px;26px);
+}
+
+.visits__text {
+  word-break: break-all;
+  align-self: center;
 }
 
 .visits__input + .visits__label::before {
   content: "";
   display: block;
   margin-right: 23px;
+  align-self: flex-start;
+  flex-shrink: 0;
   width: 56px;
   height: 56px;
   border-radius: 10%;
@@ -40,13 +46,15 @@
 }
 
 .visits__input:checked:hover + .visits__label::before,
-.visits__input:hover + .visits__label::before {
+.visits__input:hover + .visits__label::before,
+.visits__input:checked:focus + .visits__label::before,
+.visits__input:focus + .visits__label::before {
   background-color: @hover-grey;
   cursor: pointer;
 }
 
-.visits__input:checked:focus + .visits__label::before,
-.visits__input:focus + .visits__label::before {
+.visits__input:checked:active + .visits__label::before,
+.visits__input:active + .visits__label::before {
   background-color: @basic-dark-grey;
   opacity: 0.3;
 }

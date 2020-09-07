@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>HTML Academy: Седона</title>
     <link href="css/styles.min.css" rel="stylesheet">
+    <link rel="preload" href="fonts/ptsans.woff2" as="font">
+    <link rel="preload" href="fonts/ptsansbold.woff2" as="font">
 </head>
 
 <body class="page-body">
@@ -16,7 +18,7 @@
                   <span class="visually-hidden">Открыть меню</span>
                 </button>
                 <div class="main-nav__wrapper">
-                    <button class="main-nav__close main-nav--hidden" type="button">
+                    <button class="main-nav__close main-nav__close--hidden" type="button">
                       <span class="visually-hidden">Закрыть меню</span>
                     </button>
                     <ul class="main-nav__list site-list">
@@ -48,7 +50,7 @@
             <section class="photo">
                 <h2 class="visually-hidden">Галерея</h2>
                 <ul class="main-list">
-                    <li class="main-list__item item-photo item-photo__link--first">
+                    <li class="main-list__item item-photo item-photo--first">
                       <a href="#" class="item-photo__link">
                         <picture>
                           <source media="(min-width: 1200px)" srcset="img/photo-sunset-desktop@1x.webp, img/photo-sunset-desktop@2x.webp 2x" type="image/webp">
@@ -167,17 +169,17 @@
                         </div>
                         <div class="control__button-play">
                             <button type="button" class="control__reversed" aria-label="Кнопка повтора видео ">
-                              <svg class="control__svg--replay">
+                              <svg class="control__svg control__svg--replay">
                                 <use xlink:href="img/sprite.svg#icon-video-replay"></use>
                               </svg>
                             </button>
                             <button type="button" class="control__subtitles" aria-label="Кнопка субтитров ">
-                              <svg class="control__svg--subtitles">
+                              <svg class="control__svg control__svg--subtitles">
                                 <use xlink:href="img/sprite.svg#icon-video-subtitles"></use>
                               </svg>
                             </button>
                             <button type="button" class="control__full-screen" aria-label="Кнопка полного экрана ">
-                              <svg class="control__svg--fullscreen">
+                              <svg class="control__svg control__svg--fullscreen">
                                 <use xlink:href="img/sprite.svg#icon-video-fullscreen"></use>
                               </svg>
                             </button>

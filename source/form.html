@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>HTML Academy: Седона</title>
     <link href="css/styles.min.css" rel="stylesheet">
+    <link rel="preload" href="fonts/ptsans.woff2" as="font">
+    <link rel="preload" href="fonts/ptsansbold.woff2" as="font">
 </head>
 
 <body class="page-body">
@@ -16,11 +18,11 @@
                   <span class="visually-hidden">Открыть меню</span>
                 </button>
                 <div class="main-nav__wrapper">
-                    <button class="main-nav__close main-nav--hidden" type="button">
+                    <button class="main-nav__close main-nav__close--hidden" type="button">
                       <span class="visually-hidden">Закрыть меню</span>
                     </button>
                     <ul class="main-nav__list site-list">
-                        <li class="site-list__item"><a class="site-list__link" href="#">Главная</a></li>
+                        <li class="site-list__item"><a class="site-list__link" href="index.html">Главная</a></li>
                         <li class="site-list__item"><a class="site-list__link" href="photo.html">Фото и видео</a></li>
                         <li class="site-list__item"><a class="site-list__link site-list__link--active" href="form.html">форма отзыва</a></li>
                         <li class="site-list__item"><a class="site-list__link" href="https://htmlacademy.ru">HTML ACADEMY</a></li>
@@ -104,19 +106,19 @@
                         <ul class="visits__list">
                             <li class="visits__item">
                                 <input class="visits__input visually-hidden" name="bridge-devil" type="checkbox" id="bridge" checked>
-                                <label class="visits__label" for="bridge">Мост Дьявола</label>
+                                <label class="visits__label" for="bridge"><span class="visits__text">Мост Дьявола</span></label>
                             </li>
                             <li class="visits__item">
                                 <input class="visits__input visually-hidden" name="mountain-bell" type="checkbox" id="mountain" checked>
-                                <label class="visits__label" for="mountain">Гора-Колокол</label>
+                                <label class="visits__label" for="mountain"><span class="visits__text">Гора-Колокол</span></label>
                             </li>
                             <li class="visits__item">
                                 <input class="visits__input visually-hidden" name="slide-park" type="checkbox" id="park" checked>
-                                <label class="visits__label" for="park">Слайд-парк</label>
+                                <label class="visits__label" for="park"><span class="visits__text">Слайд-парк</span></label>
                             </li>
                             <li class="visits__item">
                                 <input class="visits__input visually-hidden" name="red-rocks" type="checkbox" id="rocks">
-                                <label class="visits__label" for="rocks">Красные скалы</label>
+                                <label class="visits__label" for="rocks"><span class="visits__text">Красные скалы</span></label>
                             </li>
                         </ul>
                     </fieldset>

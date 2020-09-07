@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>HTML Academy: Седона</title>
     <link href="css/styles.min.css" rel="stylesheet">
+    <link rel="preload" href="fonts/ptsans.woff2" as="font">
+    <link rel="preload" href="fonts/ptsansbold.woff2" as="font">
 </head>
 
 <body class="page-body">
@@ -16,7 +18,7 @@
                   <span class="visually-hidden">Открыть меню</span>
                 </button>
                 <div class="main-nav__wrapper">
-                    <button class="main-nav__close main-nav--hidden" type="button">
+                    <button class="main-nav__close main-nav__close--hidden" type="button">
                       <span class="visually-hidden">Закрыть меню</span>
                     </button>
                     <ul class="main-nav__list site-list">
@@ -52,7 +54,7 @@
                             <span class="list-places__number"> — №1 — </span>
                             <p class="list-places__text">седона не атракцион для туристов, там течет своя жизнь</p>
                         </div>
-                        <picture class="last-places__frame">
+                        <picture class="list-places__frame">
                           <source media="(min-width: 1200px)" srcset="img/main-city-desktop@1x.webp, img/main-city-desktop@2x.webp 2x" type="image/webp">
                           <source media="(min-width: 1200px)" srcset="img/main-city-desktop@1x.jpg, img/main-city-desktop@2x.jpg 2x">
                           <source media="(min-width: 768px)" srcset="img/main-city-tablet@1x.webp, img/main-city-tablet@2x.webp 2x" type="image/webp">
@@ -81,7 +83,7 @@
                             <span class="list-places__number"> — №2 — </span>
                             <p class="list-places__text">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
                         </div>
-                        <picture class="last-places__frame">
+                        <picture class="list-places__frame">
                           <source media="(min-width: 1200px)" type="image/webp" srcset="img/main-bridge-desktop@1x.webp, img/main-bridge-desktop@2x.webp 2x">
                           <source media="(min-width: 1200px)" srcset="img/main-bridge-desktop@1x.jpg, img/main-bridge-desktop@2x.jpg 2x">
                           <source media="(min-width: 768px)" type="image/webp" srcset="img/main-bridge-tablet@1x.webp, img/main-bridge-tablet@2x.webp 2x">

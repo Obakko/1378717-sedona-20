@@ -36,6 +36,7 @@
     padding: 0;
     display: flex;
     flex-direction: row;
+    align-items: flex-start;
     width: 100%;
     text-align: center;
   }
@@ -43,11 +44,11 @@
   .privilege__item {
     width: 33.33%;
     min-height: 330px;
-    padding: 158px 31px 0;
+    padding: 158px 31px 30px;
     text-align: center;
 
     &:nth-child(2) {
-      padding: 158px 50px 0;
+      padding: 158px 50px 40px;
     }
   }
 
@@ -59,7 +60,7 @@
 
 @media (min-width: @desktop-width) {
   .privilege__item {
-    padding: 158px 70px 0;
+    padding: 158px 70px 40px;
   }
 
   .privilege__text br {

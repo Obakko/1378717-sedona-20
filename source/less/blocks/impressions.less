@@ -35,13 +35,15 @@
 }
 
 .impressions__input:checked:hover + .impressions__label::before,
-.impressions__input:hover + .impressions__label::before {
+.impressions__input:hover + .impressions__label::before,
+.impressions__input:checked:focus + .impressions__label::before,
+.impressions__input:focus + .impressions__label::before {
   border-color: @hover-grey;
   cursor: pointer;
 }
 
-.impressions__input:checked:focus + .impressions__label::before,
-.impressions__input:focus + .impressions__label::before {
+.impressions__input:checked:active + .impressions__label::before,
+.impressions__input:active + .impressions__label::before {
   background-color: fade(@basic-light-black, 30%);
   border-color: @active-grey;
 }
